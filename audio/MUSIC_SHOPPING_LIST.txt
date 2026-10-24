@@ -1,0 +1,36 @@
+MUSIC SHOPPING LIST (all from OpenGameArt.org, all CC0 = public domain, no credit required but nice)
+=======================================================================================================
+
+HOW TO USE
+1. Open the link, press the download button for the file named below.
+2. .ogg, .mp3 and .wav all work as they are and loop automatically. A .wav is big (the boss battle one is ~20 MB), so converting
+   it to .ogg is nicer (Audacity: File > Export > Ogg Vorbis). Do NOT just rename a .wav to .ogg: that breaks it.
+3. Rename it to the EXACT name in the "save as" column and drop it into this audio/ folder.
+4. Open Godot once so it imports the files. Missing files are fine: that scene is just silent. Press F9 in the game to check.
+5. Paste a credit line for each track you really use into MUSIC_CREDITS in scripts/game_data.gd.
+
+I picked tracks uploaded in 2021 or earlier on purpose, so there is no doubt they are not AI-generated
+(your rules ban AI-generated assets). Check the licence box and the AI tag on each page anyway before you submit.
+
+SAVE AS          WHEN IT PLAYS                         TRACK (author, year)                              LINK
+bgm.ogg          title, class select, story cards      "Dungeon Ambience" (yd, 2014)  CC0               https://opengameart.org/content/dungeon-ambience   (file dungeon002.ogg)
+prep.ogg         preparation / shopping phase          "Dark Cavern Ambient" (Paul Wortmann, 2021) CC0  https://opengameart.org/content/dark-cavern-ambient   (use dark_cavern_ambient_002.ogg, the continuous loop)
+battle.ogg       every fight (Bouncer, Wolves)         "Boss Battle Music" (Juhani Junkala, 2016) CC0   https://opengameart.org/content/boss-battle-music   (wav, convert to ogg)
+battle_pickpocket.ogg   Pickpocket fight (fast, sneaky) "Chiptune Battle Music" (pmiller, 2019) CC0     https://opengameart.org/node/98535   (battle_music_01-loop.ogg)
+battle_storekeeper.ogg  final boss, the Storekeeper     "Boss Battle #2 [Symphonic Metal]" (nene, 2018) CC0   https://opengameart.org/node/84428   (zip; use the file that is really the loop. The names inside are swapped, the page says so)
+
+OPTIONAL EXTRA FILES the game also looks for:
+battle_bouncer.ogg, battle_wolf.ogg   different music for those fights (else battle.ogg is used)
+ending_win.ogg, ending_lose.ogg       music on the ending screens (else bgm.ogg continues)
+
+OTHER GOOD CC0 OPTIONS (if you want to swap): 
+- "Basilisk Boss Battle Loop" (beardalaxy, 2024) https://opengameart.org/content/basilisk-boss-battle-loop  (check AI tag, newer upload)
+- "Hard Dungeon", "Heavy Boss Battle 1" (MintoDog, 2026) https://opengameart.org/node/185539  https://opengameart.org/node/183631  (2026 uploads: check for an AI tag before using)
+- "Loopable Dungeon Ambience" (JaggedStone) https://opengameart.org/content/loopable-dungeon-ambience  (check its licence box)
+
+CREDIT LINES (paste only the ones you used into MUSIC_CREDITS):
+Dungeon Ambience by yd (CC0, opengameart.org)
+Dark Cavern Ambient by Paul Wortmann (CC0, opengameart.org)
+Boss Battle Music by Juhani Junkala (CC0, opengameart.org)
+Chiptune Battle Music by pmiller (CC0, opengameart.org)
+Boss Battle #2 [Symphonic Metal] by nene (CC0, opengameart.org)

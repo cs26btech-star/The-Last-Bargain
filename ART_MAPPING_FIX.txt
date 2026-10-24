@@ -1,0 +1,9 @@
+ART MAPPING / CROPPING FIX
+
+- beacon_demon.png = red demonic shrine/beacon (arena/shop landmark).
+- beacon_angel.png = gold/blue angelic shrine/beacon (arena/shop landmark).
+- figure_lore_demonking.png = red/black Demon King portrait shown on lore screen.
+- figure_lore_archangel.png = Archangel holding a lantern/staff shown on lore screen.
+- wing_demon.png and wing_angel.png remain character/wing images; they do not fall back to beacons.
+
+PNG cleanup: edge-connected near-white background was made transparent where present, and outer empty margins were trimmed with a small safety margin. White details enclosed within the artwork were preserved.

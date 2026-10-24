@@ -1,0 +1,11 @@
+THE LAST BARGAIN - ART GUIDE
+
+The full list of every picture slot (and where it appears in the game) is in ASSET_LIST.txt.
+
+Short version:
+- Open the .png files in Krita. Files ending in .png.import are Godot's cache; ignore them.
+- Save your drawing over the file with the EXACT same name, transparent background, any size.
+  The game scales it into a fixed box. Keep the feet/base in the same place across poses.
+- Missing file = coloured box or placeholder. Nothing crashes.
+- Shopkeeper pictures are placeholders on purpose: save figure_shop_demon.png, figure_shop_angel.png,
+  figure_catalogue.png and figure_lore_archangel.png and they appear automatically.

@@ -1,0 +1,33 @@
+THE LAST BARGAIN - FINAL CHECKLIST
+
+1. YOUR PICTURES (the last unfinished thing)
+   Save your drawings as transparent PNGs in art/ with the exact names from ASSET_LIST.txt (or in art_mine/, which is checked first).
+   The game never crashes on a missing picture: it shows a coloured box or a placeholder panel.
+   Four spots show a "your drawing goes here" panel until you draw them:
+   figure_shop_demon, figure_shop_angel, figure_catalogue, figure_lore_archangel.
+   boss_storekeeper.png is the Storekeeper boss (without it, a hooded silhouette is drawn by code).
+   WHEN EVERY PICTURE IS YOURS: delete any old placeholder PNG you did not replace. The README and the in-game credits say
+   "Artwork: drawn by the creator", so that must be true on the day you submit (the rules ban AI-generated art).
+
+2. MUSIC
+   Needed names in audio/ (ogg, mp3 or wav all work): bgm, prep, battle, battle_pickpocket, battle_storekeeper.
+   No music? Press F9 in the game. It lists each name as FOUND / MISSING / BROKEN. The same list is in the Output panel.
+   Common causes: Windows hiding the extension (bgm.ogg.ogg: now handled automatically), a .wav only renamed to .ogg (BROKEN: re-export it),
+   Godot not opened since the file was added (open the editor once so it imports), or the embedded game view being muted (use a separate window).
+
+3. FOR THE SUBMISSION FOLDER
+   [ ] GitHub repository is public (a .gitignore is included)
+   [ ] README controls table is correct
+   [ ] Windows export zipped (Project > Export > Windows Desktop; needs export templates)
+   [ ] Daily worklog, one dated entry per day
+   [ ] Overview, 150 to 300 words, naming the three themes
+   [ ] Drive folder named [YourName]_[RollNo]_Dev, shared "Anyone at IIT Hyderabad with the link" (Viewer)
+   [ ] In scripts/game_data.gd, CREDITS says what you want the title screen and Info screen to say ("Made by ^_^" right now)
+
+4. TEST (5 minutes, separate game window)
+   [ ] starts fullscreen; F11 and the FULLSCREEN button switch to a window and back (also in the pause menu)
+   [ ] music: title, preparation, each boss fight, then F9 shows no BROKEN lines
+   [ ] shop: buy, sell and deny sounds, every icon shows
+   [ ] each class: sword slash, spear lunge, dagger slash
+   [ ] all four bosses, pause (Esc), die, win, ending screen, Info screen shows the credits
+   Any red text in the Godot Output panel: send it to Claude.

@@ -1,0 +1,14 @@
+SUBMISSION STATUS — READ BEFORE UPLOADING
+
+Included: Godot source project, .gitignore, README controls, overview draft, worklog draft, art/audio/scripts.
+Not included: exported Windows executable/build ZIP; background music tracks were not found in this project archive.
+Not verified: complete Godot playthrough, music playback, export, or final visual appearance.
+
+Before submitting:
+1. Correct every worklog date/detail to match your actual work.
+2. Follow the event brief's ban on AI-generated/AI-assisted final assets. This project has included AI-assisted artwork during this conversation; do NOT submit any such assets as-is. Replace them with your own non-AI artwork or remove them.
+3. Put your actual licensed BGM files in audio/ using the expected names in AUDIO_README.txt, open the project in Godot, and use F9 in-game to see which tracks are found.
+4. Export a playable Windows build from Godot and zip the exported files. This source ZIP is not the playable build.
+5. Upload source to a public GitHub repository; include README.md and .gitignore.
+6. Put the GitHub link, playable-build ZIP, corrected worklog, and overview in the required Google Drive folder.
+7. Set access to “Anyone at IIT Hyderabad with the link” (Viewer) and submit the folder link in the official Google Form.

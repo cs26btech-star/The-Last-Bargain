@@ -1,0 +1,21 @@
+THE LAST BARGAIN — FINAL PASS REVIEW
+Date: 2026-10-24
+
+LATEST PACKAGE UPDATE
+- Integrated the supplied PNG art bundle into the matching art/ filenames.
+- Added the supplied hooded Storekeeper artwork as art/boss_storekeeper.png and art/figure_catalogue.png. The white background was made transparent and the image cropped to the figure.
+- The Storekeeper boss code already loads the art slot named boss_storekeeper, so the new sprite replaces the built-in silhouette when Godot imports the project.
+- Removed the stray “DEMON ART”, “ANGEL ART”, and “PRESS E TO TRADE” arena captions.
+- Removed visible “your art goes here” fallback labels so missing portraits do not show development notes.
+- Kept the existing harder-boss gameplay changes.
+
+KNOWN LIMITATIONS
+- No music tracks are bundled in audio/. The game expects bgm, prep, battle, battle_pickpocket, and battle_storekeeper (OGG, MP3, or WAV). Sound effects are included.
+- I could inspect and package the project files here, but Godot is not installed in this environment, so I could not launch the game, run Godot's parser, or verify gameplay in-engine.
+- A Windows playable export is not included; this ZIP is the Godot project source.
+
+FINAL TESTS TO RUN IN GODOT
+1. Import sell_everything/project.godot and press F5.
+2. Check title, class selection, all shops, the Storekeeper boss sprite, and the ending.
+3. Press F9 to check music discovery; missing music is expected until tracks are supplied.
+4. Watch the Output panel for red errors.

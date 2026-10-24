@@ -1,0 +1,98 @@
+THE LAST BARGAIN - EVERY PICTURE THE GAME USES (one file per spot)
+======================================================================
+
+How it works: each spot in the game has its OWN file in the art/ folder. To replace one,
+save your drawing over the file with the exact same name (transparent PNG, any size).
+If a file is missing, the game shows a coloured box or a placeholder, so it never crashes.
+Right now every file is a COPY of the old sheet art, so the game looks the same until you replace them.
+
+WHAT WAS SHARED BEFORE (and is now split):
+  body_idle         -> your character AND the Pickpocket boss (2 places)
+  weapon_sword/spear/dagger -> in your hand AND all 8 weapon tiles in both shops (9 places each)
+  icon_potion       -> 6 different items (3 demon potions + 3 angel contracts)
+  icon_gavel        -> 2 items (Holy Judgement + Devil's Judgement)
+  beacon_demon      -> the shrine AND the panel beside it (2 places)
+  shopkeeper_angel  -> angel shop window, Archangel story card, arena angel panel (3 places)
+  boss_storekeeper  -> demon shop window AND the catalogue window (2 places; the boss itself is drawn by code)
+  ui_panel          -> demon shop, angel shop and catalogue windows (3 places)
+  ui_button         -> 8 different groups of buttons
+  ui_hpbar          -> your health bar AND the enemy health bar (2 places)
+  coin              -> not used anywhere yet
+
+1. YOUR CHARACTER (5 files)
+   player_idle.png      you standing still (all 3 classes)
+   player_walk.png      you walking
+   held_sword.png       sword in your hand (Swordmaster)
+   held_spear.png       spear in your hand (Spearman)
+   held_dagger.png      dagger in your hand (Assassin)
+   OPTIONAL full poses (do not exist yet; they replace the 5 above when you add them):
+   swordmaster_idle / _walk / _attack, spearman_idle / _walk / _attack, assassin_idle / _walk / _attack  (.png)
+
+2. BOSSES (3 files)
+   boss_bouncer.png     The Bouncer (the blue slime)
+   boss_wolf.png        The Hungry Pack (all 5 wolves use it)
+   boss_pickpocket.png  The Pickpocket (was your own sprite before)
+   The Storekeeper boss uses art/boss_storekeeper.png; the same supplied portrait is also used as art/figure_catalogue.png if that catalogue portrait slot is enabled.
+
+3. ARENA SHRINES (4 files)
+   beacon_demon.png     the demon shrine standing in the arena
+   wing_demon.png       the framed panel on the LEFT side, behind the demon shrine
+   beacon_angel.png     the angel shrine standing in the arena
+   wing_angel.png       the framed panel on the RIGHT side, behind the angel shrine
+
+4. SHOPKEEPER PICTURES (4 spots, currently PLACEHOLDER BOXES, no files yet)
+   figure_shop_demon.png     big picture left of the DEMON shop window (supplied art integrated)
+   figure_shop_angel.png     big picture left of the ANGEL shop window (supplied art integrated)
+   figure_catalogue.png      Storekeeper portrait (supplied art integrated; current layout may hide this portrait)
+   figure_lore_archangel.png the Archangel's portrait on the story card between rounds (supplied art integrated)
+
+5. SHOP ITEM ICONS (38 files)
+   Non-weapon items, one file each (14):
+     item_d_swift.png           Demon shop - Swift Potion
+     item_d_vital.png           Demon shop - Vitality Potion
+     item_d_attack.png          Demon shop - Attack Potion
+     item_d_hellfire.png        Demon shop - Hellfire skill
+     item_d_suppress.png        Demon shop - Demon King's Suppression skill
+     item_d_judgement.png       Demon shop - Devil's Judgement skill
+     item_d_ultimate.png        Demon shop - Devil's Ultimate skill
+     item_a_weak.png            Angel shop - Contract of Weakness
+     item_a_frail.png           Angel shop - Contract of Frailty
+     item_a_slow.png            Angel shop - Contract of Slowness
+     item_a_blessing.png        Angel shop - Holy Blessing skill
+     item_a_protect.png         Angel shop - Angel's Protection skill
+     item_a_judgement.png       Angel shop - Holy Judgement skill
+     item_a_ultimate.png        Angel shop - Angel's Ultimate skill
+   Weapon items, one file per class weapon (8 items x 3 = 24):
+     the game shows the _sword, _spear or _dagger one depending on your class
+     item_d_basic_sword.png / _spear.png / _dagger.png Demon shop - Basic weapon
+     item_d_iron_sword.png / _spear.png / _dagger.png  Demon shop - Iron weapon
+     item_d_demonic_sword.png / _spear.png / _dagger.pngDemon shop - Demonic weapon
+     item_d_king_sword.png / _spear.png / _dagger.png  Demon shop - Demon King's weapon
+     item_a_basic_sword.png / _spear.png / _dagger.png Angel shop - Basic weapon
+     item_a_iron_sword.png / _spear.png / _dagger.png  Angel shop - Iron weapon
+     item_a_holy_sword.png / _spear.png / _dagger.png  Angel shop - Holy weapon
+     item_a_arch_sword.png / _spear.png / _dagger.png  Angel shop - Archangel's weapon
+
+6. WINDOWS, BUTTONS AND BARS (13 files)
+   ui_panel_demon.png        gold frame of the DEMON shop window
+   ui_panel_angel.png        gold frame of the ANGEL shop window
+   ui_panel_catalogue.png    gold frame of the CATALOGUE window
+   ui_button_menu.png        big menu buttons (title / class select / continue / play again)
+   ui_button_choose.png      the CHOOSE button on the class cards
+   ui_button_catalogue.png   CATALOGUE button on the HUD
+   ui_button_start.png       START ROUND button on the HUD
+   ui_button_pause_resume.png  RESUME button in the pause menu
+   ui_button_pause_quit.png    QUIT TO TITLE button in the pause menu
+   ui_button_shop_demon.png  buttons inside the DEMON shop (buy / close)
+   ui_button_shop_catalogue.png  buttons inside the CATALOGUE (sell / close)
+   (the ANGEL shop buttons are plain flat white-and-gold, no picture)
+   ui_hpbar_player.png       gold frame around YOUR health bar
+   ui_hpbar_enemy.png        gold frame around the ENEMY health bar
+
+7. NOT USED YET
+   hud_coin.png              small coin; meant for next to the coin counter (not connected)
+   title_logo.png            future title picture (not connected)
+
+Old shopkeeper pictures were moved to art_unused/ (Godot ignores that folder).
+
+Files currently in art/: 64
